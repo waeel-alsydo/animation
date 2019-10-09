@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div a{
+    font-size: 60px;
+    text-decoration: none;
+    color: #000;
+}
+section:first-of-type{
+    background-color: rgba(255, 255, 0, 0.281);
+}
+section:nth-child(2){
+    background-color: rgba(0, 128, 0, 0.301);
+}
+section:last-of-type{
+    background-color: rgba(255, 0, 0, 0.281);
+}
+section div div{
+    font-size: 50px;
+    text-align: center;
+    animation: mymove 1s infinite;
+}
+@keyframes mymove{
+    0%{transform: translateY(10px);}
+    50%{transform: translateY(30px);}
+    100%{transform: translateY(10px);}
+}
